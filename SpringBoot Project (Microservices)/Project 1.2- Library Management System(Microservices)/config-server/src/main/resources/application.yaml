@@ -1,0 +1,19 @@
+server:
+  port: 8888  # Default port for Config Server
+
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native  # This tells Spring Cloud to use local files instead of Git
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:./config  # Local folder for configuration files
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
