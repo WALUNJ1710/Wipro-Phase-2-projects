@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Table Booking</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"> <!-- Link your CSS file here -->
+</head>
+<body>
+
+  <div class="booking-container">
+    <h2>Reserve Your Table</h2>
+
+    <form action="#">
+      <!-- Name -->
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your full name" required>
+
+      <!-- Contact -->
+      <label for="contact">Contact Number</label>
+      <input type="tel" id="contact" placeholder="Enter your contact number" required>
+
+      <!-- Date -->
+      <label for="date">Reservation Date</label>
+      <input type="date" id="date" required>
+
+      <!-- Time -->
+      <label for="time">Reservation Time</label>
+      <input type="time" id="time" required>
+
+      <!-- Guests -->
+      <label for="guests">Number of Guests</label>
+      <input type="number" id="guests" placeholder="Total guests" min="1" required>
+
+      <!-- Table Preference -->
+      <label for="preference">Table Preference</label>
+      <select id="preference" required>
+        <option value="" disabled selected>Select preference</option>
+        <option>Indoor</option>
+        <option>Outdoor</option>
+        <option>Window Side</option>
+        <option>Private Cabin</option>
+      </select>
+
+      <!-- Submit Button -->
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+
+</body>
+</html>

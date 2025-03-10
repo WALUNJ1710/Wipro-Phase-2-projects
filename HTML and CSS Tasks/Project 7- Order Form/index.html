@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="order-container">
+        <h2>Place Your Order</h2>
+        <form>
+          <label for="method">Select Shopping Method</label>
+          <select id="method" required>
+            <option value="" disabled selected>Choose method</option>
+            <option>Home Delivery</option>
+            <option>Store Pickup</option>
+            <option>Curbside Pickup</option>
+          </select>
+    
+          <label for="quantity">Enter Quantity</label>
+          <input type="number" id="quantity" min="1" placeholder="Enter quantity" required>
+    
+          <button type="submit">Submit Order</button>
+        </form>
+      </div>
+    
+</body>
+</html>

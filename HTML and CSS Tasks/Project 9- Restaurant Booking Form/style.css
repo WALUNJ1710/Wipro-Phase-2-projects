@@ -1,0 +1,91 @@
+/* Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #0d0d0d;
+    color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Container */
+  .booking-container {
+    width: 100%;
+    max-width: 450px;
+    padding: 40px 30px;
+    background: rgba(186, 85, 211, 0.08);
+    border: 1px solid rgba(186, 85, 211, 0.3);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 24px rgba(186, 85, 211, 0.2);
+    text-align: center;
+  }
+  
+  /* Heading */
+  h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #da70d6;
+    text-shadow: 0 0 16px rgba(218, 112, 214, 0.7);
+  }
+  
+  /* Labels */
+  label {
+    display: block;
+    text-align: left;
+    margin: 20px 0 8px;
+    font-size: 16px;
+    color: #e6e6e6;
+  }
+  
+  /* Inputs */
+  input, select {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(218, 112, 214, 0.4);
+    background: rgba(0, 0, 0, 0.5);
+    color: #da70d6;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s ease;
+  }
+  
+  input::placeholder {
+    color: rgba(218, 112, 214, 0.5);
+  }
+  
+  input:hover, select:hover {
+    border-color: #da70d6;
+    box-shadow: 0 0 12px rgba(218, 112, 214, 0.5);
+  }
+  
+  /* Button */
+  button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #9400d3, #da70d6);
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    box-shadow: 0 0 25px #da70d6, 0 0 50px #9400d3;
+    transform: scale(1.05);
+  }
+  
